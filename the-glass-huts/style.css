@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    font-family: 'Exo 2', sans-serif;
+
+}
+.nav-link{
+    text-decoration: none;
+    color: black !important;
+    margin-left: 20px;
+    text-transform: uppercase;
+    margin-left: 0px;
+}
+img{
+    width: 100%;
+}
+.part1, .part2, .the-hut{
+    margin: 70px 0;
+}
+.the-hut>.bg-image{
+    background-image: url(the-hut-bg.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 350px;
+    color: white;
+    padding: 0;
+}
+.bg-image>.row{
+    background-color: rgba(0, 0, 0, 0.338);
+    margin: 0;
+
+}
+.banner{
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: center center;
+
+    padding-top: 70px;
+    padding-bottom: 400px;
+    color: white;
+    font-size: 2em;
+    font-weight: 300;
+}
+.the-area>.bg-image {
+    background-image: url(the-area.png);
+    background-size: cover;
+    background-position: center center;
+    height: 350px;
+    color: white;
+    padding: 0;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+footer .container-fluid{
+    background: #5B6460;
+    color: white;
+    padding: 50px 0;
+}
+footer .about div{
+    margin: 0 15px;
+    font-size: 0.8rem;
+}
