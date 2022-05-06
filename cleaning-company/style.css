@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+.tel-num{
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-left: 17px;
+}
+.how-item{
+        text-align: center;
+}
+.how-item img{
+    width: 50%;
+    padding: 40px;
+}
+.bold{
+    font-weight: 900;
+    font-size: 1.1rem;
+}
+.how-it-works{
+    margin: 80px 0;
+    padding: 50px 0;
+    background-image: linear-gradient(to bottom, #83bbfa, #deeaff, #ecf0ff, #f7f7ff, #ffffff);
+}
+.about p{
+    margin: 30px 0;
+}
+.professional-services{
+    margin: 100px 0;
+}
+.services-item img{
+    width: 50%;
+  
+}
+.services-item-img{
+    margin-bottom:25px;
+    margin-top: 20px;
+}
+.services-item{
+    border: 2px solid rgb(211, 211, 211);
+    padding: 20px;
+    margin: 10px;
+    height: 100%;
+}
+h2{
+    margin: 50px 0;
+
+}
+.covid-19-row{
+    border-radius: 20px;
+    color: white;
+    align-items: center;
+    margin-bottom: 50px;
+    background-image: linear-gradient(to top left, #211f54,   #c6c5d4);
+}
+.covid-19-col-2{
+    padding: 30px 20px;
+}
+.area-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style-image: url(list-img.png);
+    margin: 50px 0;
+}
+.area-row{
+    border-radius: 20px;
+    background-image: linear-gradient(to right , #0075ff, #d0d2e3);
+    padding: 50px 0;
+}
+.number-big-p{
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+.number-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+footer img{
+ width: 200px;
+}
+footer{
+    margin-top: 50px;
+    padding: 30px 0;
+    color: #000000;
+    background: linear-gradient(to right, #3F37A0, #FBFBFB, #2A00FF);
+}
+section{
+    margin: 100px 0;
+}
