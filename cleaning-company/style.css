@@ -91,6 +91,14 @@ footer{
     color: #000000;
     background: linear-gradient(to right, #3F37A0, #FBFBFB, #2A00FF);
 }
+.navbar{
+    background: linear-gradient(to right, #a39fcd, #FBFBFB, #2A00FF);
+    margin-bottom: 50px;
+}
+nav{
+        
+
+}
 section{
     margin: 100px 0;
 }
