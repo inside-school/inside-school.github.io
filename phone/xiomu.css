@@ -1,0 +1,27 @@
+body{
+    background-color: black;
+    color: white;
+}
+ img{
+     width: 100%;
+     margin: 15px;
+
+ }
+ .logo-text{
+     font-size: 3rem;
+     color: rgb(255, 0, 0);
+     /* font-family: 'Lobster', cursive; */
+     text-shadow: 0px 0px 3px tomato ;
+ font-family: 'Permanent Marker', cursive;
+  
+ }
+ .col-md-6{
+     padding: 15px;
+     
+ }
+ .row{
+     align-items: center;
+ }
+ .navbar{
+    background: linear-gradient(to top, black, white);
+}
