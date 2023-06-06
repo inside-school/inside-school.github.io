@@ -1,0 +1,48 @@
+img{
+    width: 100%;
+}
+.header{
+    padding:30px;
+    background-color: red;
+    text-align: center;
+}
+img{
+width: 100%;
+}
+body{
+   margin:0;
+}
+
+.bg{
+    background-color: rgb(116, 243, 116);
+padding: 0px;
+}
+.nav-link{
+font-family: 'Kurale', serif;
+}
+h1{
+    font-family: 'Satisfy', cursive;
+}
+h2{
+font-family: 'Dancing Script', cursive;
+}
+p{
+font-family: 'EB Garamond', serif;
+}
+/* 
+
+
+
+
+
+
+font-family: 'Lobster', cursive;
+font-family: 'Marmelad', sans-serif;
+font-family: 'PT Serif', serif;
+font-family: 'Rubik Wet Paint', cursive;
+font-family: 'Satisfy', cursive;
+font-family: 'Sofia Sans Extra Condensed', sans-serif;
+font-family: 'Vollkorn', serif; 
+
+
+*/
