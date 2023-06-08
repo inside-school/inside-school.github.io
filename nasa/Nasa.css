@@ -1,0 +1,42 @@
+.logo-img{
+    width: 80px;
+   }
+   img{
+       width: 100%;
+   }
+   .nav-link{
+       color: rgb(0, 255, 191);
+       font-weight: 900;
+       font-size: 1.1rem;
+       text-shadow: 0px 0px 2px black;
+   }
+   
+   .socio-link{
+       text-decoration: none;
+       font-size: 1.5rem;
+       color: #00e1ff8f;
+   }
+   .footer{
+       background-color: rgba(174, 174, 174, 0.713);
+       padding: 30px 0;
+       margin-top: 50px;
+   }
+   .navbar{
+    background: #99999969;
+   }
+   .container{
+    box-shadow: 0px 10px 3px 5px rgba(146, 238, 254, 0.615);
+    letter-spacing: 0.15em;
+    text-shadow: 4px 4px 0px #fffb2459, 7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+.row{
+    background-color: rgba(0, 24, 161, 0.723);
+    padding-top: 50px;
+    padding-bottom: 50px;
+color: #001d7490;
+margin-top: 20px;
+}
+.title{
+    font-size: 2rem;
+    text-decoration: none;
+}
