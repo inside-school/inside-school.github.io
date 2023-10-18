@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(5, 224, 5);
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgb(255, 0, 221);
+        }
+
+        .elipse {
+            width: 400px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgb(25, 0, 255);
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid red;
+        }
+
+        .rectangle {
+            width: 400px;
+            height: 200px;
+            background-color: rgb(239, 104, 0);
+        }
+
+        .figure {
+            margin: 80px auto;
+            transition: all 0.8s;
+        }
+        .btn-wrap{
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        button{
+            padding: 15px 25px;
+            border: none;
+            font-size: 1.3em;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        button:hover{
+            background-color: #32f95a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn-wrap">
+        <button class="sq-B">Квадрат</button>
+        <button class="crl-B">Круг</button>
+        <button class="elipse-B">Еліпс</button>
+        <button class="tr-B">Трикутник</button>
+        <button class="rectangle-B">Прямокутник</button>
+    </div>
+
+    <div class="figure">
+    </div>
+
+    <script>
+        let squareBtn = document.querySelector('.sq-B');
+        let circleBtn = document.querySelector('.crl-B');
+        let elipseBtn = document.querySelector('.elipse-B');
+        let triangleBtn = document.querySelector('.tr-B');
+        let rectangleBtn = document.querySelector('.rectangle-B');
+
+
+        let div = document.querySelector('.figure')
+
+        squareBtn.onclick = function () {
+            if (div.classList.contains('circle')) {
+                div.classList.remove('circle');
+            }
+            if (div.classList.contains('elipse')) {
+                div.classList.remove('elipse');
+            }
+            if (div.classList.contains('triangle')) {
+                div.classList.remove('triangle');
+            }
+            if (div.classList.contains('rectangle')) {
+                div.classList.remove('rectangle');
+            }
+            div.classList.add('square');
+
+        }
+        circleBtn.onclick = function () {
+            if (div.classList.contains('square')) {
+                div.classList.remove('square');
+            }
+            if (div.classList.contains('elipse')) {
+                div.classList.remove('elipse');
+            }
+            if (div.classList.contains('triangle')) {
+                div.classList.remove('triangle');
+            }
+            if (div.classList.contains('rectangle')) {
+                div.classList.remove('rectangle');
+            }
+            div.classList.add('circle')
+        }
+        elipseBtn.onclick = function () {
+            if (div.classList.contains('square')) {
+                div.classList.remove('square');
+            }
+            if (div.classList.contains('circle')) {
+                div.classList.remove('circle');
+            }
+            if (div.classList.contains('triangle')) {
+                div.classList.remove('triangle');
+            }
+            if (div.classList.contains('rectangle')) {
+                div.classList.remove('rectangle');
+            }
+            div.classList.add('elipse')
+        }
+        triangleBtn.onclick = function () {
+            if (div.classList.contains('square')) {
+                div.classList.remove('square');
+            }
+            if (div.classList.contains('circle')) {
+                div.classList.remove('circle');
+            }
+            if (div.classList.contains('elipse')) {
+                div.classList.remove('elipse');
+            }
+            if (div.classList.contains('rectangle')) {
+                div.classList.remove('rectangle');
+            }
+            div.classList.add('triangle')
+        }
+        rectangleBtn.onclick = function () {
+            if (div.classList.contains('square')) {
+                div.classList.remove('square');
+            }
+            if (div.classList.contains('circle')) {
+                div.classList.remove('circle');
+            }
+            if (div.classList.contains('elipse')) {
+                div.classList.remove('elipse');
+            }
+            if (div.classList.contains('triangle')) {
+                div.classList.remove('triangle');
+            }
+            if (div.classList.contains('rectangle')) {
+                div.classList.remove('rectangle');
+            }
+            div.classList.add('rectangle')
+
+        }
+
+
+    </script>
+</body>
+
+</html>
