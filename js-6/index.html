@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-else</title>
+    <style>
+        h1,
+        h2 {
+            font-family: Cambria, serif;
+            text-align: center;
+        }
+
+        section {
+            border: 2px solid rgb(0, 253, 0);
+            padding: 5px 0 30px 20px;
+            box-shadow: 2px 2px 2px gray;
+            margin: 30px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 2px 5px 2px 5px;
+            background-color: rgb(0, 255, 55);
+            border-radius: 3px;
+            border: 1px solid green;
+            font-family: 'Consolas', Courier, monospace;
+            margin: 7px;
+        }
+
+        button:hover {
+            background-color: rgb(4, 97, 24);
+            color: white;
+        }
+
+        div {
+            margin: 10px;
+        }
+        .parol{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Урок 3. Оператор розгалуження if-else</h1>
+
+
+    <section>
+        <h2>Введіть пароль від сайту:</h2>
+        <input type="password" class="in-01">
+        <button class="b-01">Підтвердити</button>
+        <div class="out-01"></div>
+    </section>
+
+
+<div class="parol">
+    <!-- завдання 1 -->
+
+    <section>
+        <h2>Завдання 1</h2>
+        <label>Введіть число:</label>
+        <input type="number" class="in-1">
+        <button class="b-1">Додатне чи від'ємне</button>
+        <div class="out-1"></div>
+    </section>
+    <section>
+        <h2>Завдання 2</h2>
+        <label for="">Введіть два число:</label>
+        <input type="number" class="in-2-1">
+        <input type="number" class="in-2-2">
+        <button class="b-2">Яке більше?</button>
+        <div class="out-2"></div>
+    </section>
+    <section>
+        <h2>Завдання 3</h2>
+        <label for="">Введіть рік народження:</label>
+        <input type="number" class="in-3">
+        <button class="b-3">Перевірка на повноліття</button>
+        <div class="out-3"></div>
+    </section>
+    <section>
+        <h2>Завдання 4. Калькулятор</h2>
+        <div>
+            <label for="">Введіть число 1:</label>
+            <input type="number" class="in-33-1">
+        </div>
+        <div>
+            <label for="">Введіть число 2:</label>
+            <input type="number" class="in-33-2">
+        </div>
+        <div>
+            <label for="">Введіть дію (+, -, *, /, ^(степінь)):</label>
+            <input type="text" class="in-33-3">
+        </div>
+        <button class="b-33">Порахувати</button>
+        <div><label for="">Результат:</label></div>
+        <div class="out-33"></div>
+    </section>
+    <section>
+        <h2>Завдання 5</h2>
+        <label for="">Введіть число:</label>
+        <input type="number" class="in-5">
+        <button class="b-5">Перевірка на парність</button>
+        <div class="out-5"></div>
+    </section>
+
+    <section>
+        <h2>Завдання 6. Квадратне рівняння</h2>
+        <div class="">
+            <label for="">Введіть коефіцієнт 1:</label>
+            <input type="number" class="in-4-1">
+        </div>
+        <div class="">
+            <label for="">Введіть коефіцієнт 2:</label>
+            <input type="number" class="in-4-2">
+        </div>
+        <div class="">
+            <label for="">Введіть коефіцієнт 3:</label>
+            <input type="text" class="in-4-3">
+        </div>
+        <button class="b-4">Знайти розв'язки</button>
+        <div class=""><label for="">Результат:</label></div>
+        <div class="out-4"></div>
+    </section>
+
+</div>
+
+
+
+
+    <!-- парність числа -->
+
+
+    <!-- чи є 18 років -->
+    <!-- <label for="">Введіть свій вік:</label>
+    <input type="text" class="age">
+    <button class="b-2">Перевірити дозвіл</button>
+    <div class="out-2"></div> -->
+
+
+    <script>
+
+
+
+        // завдання 2 - вивести більше число
+        let button2 = document.querySelector(".b-2");
+        let input2_1 = document.querySelector(".in-2-1");
+        let input2_2 = document.querySelector(".in-2-2");
+        let div2 = document.querySelector(".out-2");
+        function zd2() {
+            let num1 = +input2_1.value;
+            let num2 = +input2_2.value;
+            if (num1 > num2) {
+                div2.textContent = "Перше число більше: " + num1;
+            }
+            else if (num1 == num2) {
+                div2.textContent = "Вони однакові";
+            }
+            else {
+                div2.textContent = "Друге число більше: " + num2;
+            }
+        }
+        button2.onclick = zd2;
+
+        // завдання 3 - чи ви повнолітній
+        let button3 = document.querySelector(".b-3");
+        let input3 = document.querySelector(".in-3");
+        let div3 = document.querySelector(".out-3")
+        function zd3() {
+            let number = +input3.value;
+            if ((2020 - number) >= 18) {
+                div3.textContent = "Вітаємо! Вам є 18 :)";
+            }
+            else {
+                div3.textContent = "До 18 треба ще трошки почекати :(";
+            }
+        }
+        button3.onclick = zd3;
+
+        // завдання 4 - додатне/від'ємне число
+        let button1 = document.querySelector(".b-1");
+        let input1 = document.querySelector(".in-1");
+        let div1 = document.querySelector(".out-1")
+        function zd1() {
+            let number = +input1.value;
+
+            if (number > 0) {
+                div1.textContent = "Введене число додатне";
+            }
+            else if (number == 0) {
+                div1.textContent = "Введене число 0";
+            }
+            else if (number < 0) {
+                div1.textContent = "Введене число від'ємне";
+            }
+        }
+        button1.onclick = zd1;
+
+        // завдання 4 - парність числа
+        let button5 = document.querySelector(".b-5");
+        let input5 = document.querySelector(".in-5");
+        let div5 = document.querySelector(".out-5")
+        function zd5() {
+            let number = +input5.value;
+            let rez = number % 2;
+            if (rez == 0) {
+                div5.textContent = "Введене число парне";
+            }
+            else if (rez != 0) {
+                div5.textContent = "Введене число не парне";
+            }
+
+        }
+        button5.onclick = zd5;
+
+        // завдання 3
+        let in3_13 = document.querySelector(".in-33-1");
+        let in3_23 = document.querySelector(".in-33-2");
+        let in3_33 = document.querySelector(".in-33-3");
+        let but33 = document.querySelector(".b-33");
+        let div33 = document.querySelector(".out-33");
+
+
+        function zd33() {
+            let num1 = +in3_13.value;
+            let num2 = +in3_23.value;
+            let num3 = in3_33.value;
+
+            if (num3 == "+") {
+                div33.textContent = num1 + num2;
+            }
+            else if (num3 == "-") {
+                div33.textContent = num1 - num2;
+            }
+            else if (num3 == "*") {
+                div33.textContent = num1 * num2;
+            }
+            else if (num3 == "/") {
+                div33.textContent = num1 / num2;
+            }
+            else if (num3 == "^") {
+                div33.textContent = Math.pow(num1, num2);
+            }
+            else {
+                div33.textContent = "Щось не пілшо :(";
+            }
+        }
+        but33.onclick = zd33;
+
+        // завдання 6
+        let in4_1 = document.querySelector(".in-4-1");
+        let in4_2 = document.querySelector(".in-4-2");
+        let in4_3 = document.querySelector(".in-4-3");
+        let but4 = document.querySelector(".b-4");
+        let div4 = document.querySelector(".out-4");
+
+        function zd4() {
+            let a = +in4_1.value;
+            let b = +in4_2.value;
+            let c = +in4_3.value;
+            let D = (b * b) - (4 * a * c);
+            if (D < 0) {
+                div4.textContent = "Розв'язків нема. Від'ємний дискримінант";
+            }
+            else if (D > 0) {
+                let x1 = (-b - Math.sqrt(D)) / (2 * a);
+                let x2 = (-b + Math.sqrt(D)) / (2 * a);
+                div4.textContent = "x1 = " + x1 + " x2 = " + x2;
+            }
+            else if (D == 0) {
+                let x = -b / (2 * a);
+                div4.textContent = "x = " + x;
+            }
+            else {
+                div4.textContent = "Щось не пішло :(";
+            }
+        }
+        but4.onclick = zd4;
+
+        //  --------------------пароль
+        let inp01 = document.querySelector('.in-01');
+        let btn01 = document.querySelector('.b-01');
+        let div01 = document.querySelector('.out-01');
+        let parol = document.querySelector('.parol')
+        btn01.onclick = function(){
+            let password = inp01.value;
+            if (password.trim().toLowerCase() != 'javascript'){
+                div01.innerHTML = 'Підказка:  назва мови, яку ми вивчаємо :)'
+            }
+            else{
+                div01.innerHTML = 'iМолодець!';
+                
+                parol.style.display = 'block';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
