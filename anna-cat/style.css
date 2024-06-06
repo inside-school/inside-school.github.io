@@ -1,0 +1,57 @@
+img{
+    width: 100%;
+}
+.top-img{
+    background-image: url(12.jpg);
+    background-size: cover;
+    background-position: 50% 90%;
+    height: 700px;
+}
+.ttop{
+    align-items: flex-start;
+    justify-content: center;
+}
+.tap-img{
+    background-image: url(9.jpg);
+    background-size: cover;
+    background-position: 70%;
+    height: 600px;
+}
+.tap{
+    align-items:center;
+    justify-content: flex-start;
+}
+.tor-img{
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: 50% 90%;
+    height: 700px;
+    color: rgb(202, 202, 201);
+}
+.ttor{
+    align-items: center;
+    justify-content: flex-start;
+}
+footer{
+    background-color: #000000;
+    padding: 20px;
+    margin-top: 30px;
+}
+.socio{
+    color: #b93bdc;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 10px;
+}
+h1{
+    font-family: "Yeseva One", serif;
+
+}
+h2{
+    font-family: "Caveat", cursive;
+
+}
+p{
+    font-family: "Playfair Display", serif;
+
+}
