@@ -1,0 +1,49 @@
+.d{
+text-align: center;
+
+
+}
+.b{
+text-align: center;
+
+}
+img{
+    width: 100%;
+}
+.card-title{
+    text-align: center;
+}
+p{
+   color: white;
+}
+.col-md-8, .fon-white{
+    background-color: rgba(255, 255, 255, 0.453);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+   h2{
+    color: white;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ h1{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+ .card-text{
+    color: black;
+ }
+
+
+
+.nav-link{
+    color: black;
+}
+
+
+
+
+
+
+
