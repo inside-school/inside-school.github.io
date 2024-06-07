@@ -1,0 +1,34 @@
+p{
+    text-align: left;
+}
+img{
+    width: 100%;
+}
+.big-photo{
+  
+    height: 600px;
+    background-size: cover;
+    background-position:50% 50% ;
+    color: rgb(7, 30, 50);
+}
+.ph-1{
+    background-image: url( save-energy-7382279_1280.jpg);
+
+}
+.ph-2{
+background-image: url(lll.jpg);
+}
+.btn-color{
+background-color: #a4fc99;
+margin:20px auto ;
+
+}
+.btn-color:hover{
+background-color: #454545;
+color: aliceblue;
+
+}
+.abbb{
+    display: flex;
+    justify-content: center;
+}
