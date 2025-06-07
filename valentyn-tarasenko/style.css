@@ -1,0 +1,57 @@
+img{
+    width: 100%;
+}
+body{
+    background: linear-gradient(to bottom, blue, rgb(94, 168, 253), rgb(167, 95, 255), violet, yellow, rgb(143, 228, 125), green);
+}
+.logo-img{
+    width: 50px;
+}
+.main-container{
+    background-color: #ffffff5b;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.border-my{
+    border-top: 1px solid #000;
+    margin-top: 15px;
+    padding-top: 10px;
+}
+.mode-list li{
+    border-bottom: 1px solid black;
+    margin: 15px 0;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.interesting-list{
+    list-style-type: none;
+    
+}
+.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.facts-3{
+    background-color: #a6eca5;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.facts-2{
+    background-color: #7a9fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.facts-1{
+    background-color: #c67aff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+h1, h2{
+      font-family: "Press Start 2P", system-ui;
+
+}
+h3{
+      font-family: "Comfortaa", sans-serif;
+
+}
