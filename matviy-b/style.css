@@ -1,0 +1,75 @@
+img{
+    width: 100%;
+    transition: 0.5s;
+}
+.footer{
+background-color: rgb(235, 129, 129);
+padding: 30px 0;
+margin-top: 50px;
+}
+
+.socio-link{
+font-size: 2rem;
+color: rgb(196, 214, 229);
+margin: 10px;
+}
+.socio-link:hover{
+    color: white;
+}
+.foter p{
+color: aquamarine;
+}
+
+@keyframes move {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(45deg) scale(1.1);
+        
+    }
+    100%{
+        transform: rotate(0deg);
+
+    }
+}
+
+img:hover{
+animation: move 2s infinite alternate;
+/* box-shadow: 2px 2px 20px gold; */
+}
+
+
+
+
+p{
+    
+   
+    font-family: "Source Code Pro", monospace;
+
+}
+h2{
+    font-family: "WDXL Lubrifont TC", sans-serif;
+
+}
+h1{
+    font-family: "EB Garamond", serif;
+
+}
+
+
+
+h3{
+     font-family: "EB Garamond", serif;
+     font-family: "Alumni Sans SC", sans-serif;
+}
+
+.col-md-5{
+    /* overflow: hidden; */
+    padding: 20px;
+}
+
+
+
+
+
