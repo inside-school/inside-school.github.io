@@ -1,0 +1,45 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 221, 70);
+    text-shadow: 0px 0px 1px black;
+}
+p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 0px 1px black;
+}
+img{
+    width: 100%;
+}
+.list-item{
+    background-color: #d5d5d5;
+    margin: 15px;
+    padding: 20px;
+
+}
+.list-item:hover{
+    cursor: pointer;
+}
+.active{
+    background-color: rgb(255, 187, 0);
+    color: rgb(110, 110, 110);
+}
+.car-name-list{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+.car-about{
+    display: flex;
+    margin: 15px;
+}
+.car-img{
+    max-width:60%;
+    margin-right: 30px;
+}
+.car-info div{
+    margin: 10px 0;
+}
