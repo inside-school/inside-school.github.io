@@ -1,0 +1,16 @@
+img {
+    width: 100%;
+}
+
+.right-img {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    width: 100%;
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
