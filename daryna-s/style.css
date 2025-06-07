@@ -1,0 +1,32 @@
+img {
+    width: 100%;
+}
+
+.logo {
+    width: 170px;
+}
+
+.bg-1 {
+    background-image: url(kvadrat.jpg);
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.bg-container {
+    background-color: #ffffffac;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.row {
+    align-items: center;
+
+}
+
+.pp {
+    padding: 20px;
+}
+body{
+     font-family: "Pacifico", cursive;
+}
