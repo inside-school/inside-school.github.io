@@ -5,7 +5,7 @@ let carrData = [
         year: 2015, 
         color: 'Green', 
         price: 13000, 
-        image: 'volkswagen-passat-b7.jpg',
+        image: 'volkswagen-passat-b7.JPG',
         about: '',
     },
     { name: 'Bmw', model: 'E60', year: 2010, price: 11500, color: 'Gray', image: 'bmw-m5-e60.jpg' , about: '',},
