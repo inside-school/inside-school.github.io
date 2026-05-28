@@ -1,0 +1,322 @@
+img {
+    width: 100%;
+}
+
+.animal-1 {
+    background-image: url(img/fon1.jpg);
+}
+
+.text-col {
+    background-color: rgba(240, 248, 255, 0.534);
+}
+
+img {
+    width: 100%;
+}
+
+.animal-2 {
+    background-image: url(img/fon.jpg);
+}
+
+.propertes p {
+    font-weight: 900;
+}
+
+.propertes span {
+    font-weight: 400;
+}
+
+/* селект */
+
+/* Контейнер для кастомной стрелочки */
+.select-left-wrap,
+.select-right-wrap {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 320px;
+}
+
+/* Стилизация самого селекта */
+.select-left,
+.select-right {
+    width: 100%;
+    padding: 12px 40px 12px 16px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    color: #2d3748;
+    /* Темно-серый текст */
+    background-color: #fcfbf7;
+    /* Мягкий эко-белый (цвет пергамента) */
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    cursor: pointer;
+    appearance: none;
+    /* Убираем стандартную стрелку браузера */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+/* Состояние при наведении */
+.select-left:hover,
+.select-right:hover {
+    border-color: #004910;
+    /* Благородный красный */
+    background-color: #fff;
+}
+
+/* Состояние при фокусе (клике) */
+
+.select-left:focus,
+.select-right:focus {
+    outline: none;
+    border-color: #005207;
+    /* Яркий красный */
+    box-shadow: 0 0 0 3px rgba(5, 158, 18, 0.15);
+    /* Нежное красное свечение */
+}
+
+/* Кастомная стрелочка (иконка вниз) */
+.select-right-wrap::after,
+.select-left-wrap::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #02491a;
+    /* Красная стрелочка */
+    pointer-events: none;
+    /* Клик проходит сквозь стрелку на селект */
+    transition: transform 0.3s ease;
+}
+
+.select-right-wrap:focus-within::after,
+.select-left-wrap:focus-within::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.select-left option,
+.select-right option {
+    padding: 10px;
+    background-color: #fff;
+    color: #2d3748;
+}
+
+.select-left option.extinct,
+.select-right option.extinct {
+    color: #991b1b;
+    /* Темнrgb(6, 90, 13)ый для вымерших видов */
+    font-weight: bold;
+}
+
+/* ---------------------------- */
+/* підвал */
+/* Основной контейнер футера */
+.footer {
+    background-color: #3d3d3d;
+    /* Очень мягкий эко-серый/бежевый оттенок */
+    padding: 60px 0 30px 0;
+    border-top: 3px solid #288104;
+    /* Тонкая красная линия-акцент сверху */
+    color: #f0eeee;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Стили для левой колонки */
+.footer-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #71d468;
+    /* Фирменный красный цвет */
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #d1d1d1;
+    max-width: 450px;
+    margin-bottom: 25px;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    color: #c9c9c9;
+    margin: 0;
+}
+
+/* Стили для правой колонки */
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* На экранах компьютеров сдвигаем ссылки вправо для баланса */
+@media (min-width: 768px) {
+    .footer-right {
+        align-items: flex-end;
+        text-align: right;
+    }
+}
+
+.footer-subtitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #add6ad;
+    margin-bottom: 15px;
+}
+
+/* Список ссылок */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+/* Эффект при наведении на ссылку */
+.footer-links a:hover {
+    color: #44dc26;
+    /* Мягкий переход в красный */
+    transform: translateX(-3px);
+    /* Легкий сдвиг влево при наведении */
+}
+
+/* Корректировка сдвига для мобильных устройств */
+@media (max-width: 767px) {
+    .footer-links a:hover {
+        transform: translateX(3px);
+        /* На мобильных сдвиг вправо */
+    }
+
+    .col-md-6:first-child {
+        margin-bottom: 35px;
+        /* Отступ между колонками на смартфонах */
+    }
+}
+
+/* --------------- */
+
+h2 {
+    font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #2e5a36;
+    /* Глубокий хвоино-зеленый для отличной читаемости */
+    /* margin-top: 40px; */
+    margin-bottom: 40px;
+    padding-bottom: 8px;
+    position: relative;
+    display: inline-block;
+    /* Чтобы подчеркивание было только по ширине текста */
+    transition: color 0.3s ease;
+}
+
+/* Элегантная светло-зеленая линия под заголовком */
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    /* Изначальная длина линии */
+    height: 3px;
+    background-color: #72af7d;
+    /* Мягкий светло-зеленый (лиственный) оттенок */
+    border-radius: 2px;
+    transition: width 0.4s ease, background-color 0.3s ease;
+}
+
+/* Эффект при наведении курсора на заголовок */
+h2:hover {
+    color: #1e3f24;
+    /* Заголовок становится чуть темнее */
+}
+
+h2:hover::after {
+    width: 100%;
+    /* Линия плавно растягивается на всю ширину заголовка */
+    background-color: #4b8655;
+    /* Линия становится более насыщенной зеленой */
+}
+
+/* Адаптивность для мобильных экранов */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+}
+
+
+h1 {
+    font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+    font-size: 42px;
+    font-weight: 800;
+    /* Очень жирный шрифт для главного заголовка */
+    color: #1b4324;
+    /* Глубокий лесной зеленый цвет */
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
+    /* Легкое сужение букв для современности */
+    position: relative;
+    padding-bottom: 20px;
+}
+
+/* Декоративный элемент под главным заголовком */
+h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #a1db97, #51985a);
+    /* Градиент от светло-зеленого к насыщенному */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(81, 152, 90, 0.2);
+}
+
+/* Дополнительный эстетический штрих: первая буква */
+h1::first-letter {
+    color: #3b7a44;
+    /* Свежий зеленый акцент для первой буквы */
+}
+
+/* Адаптивность под мобильные телефоны */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+        margin-top: 35px;
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+    }
+
+    h1::after {
+        width: 80px;
+        height: 3px;
+    }
+}
