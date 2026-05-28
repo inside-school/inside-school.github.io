@@ -1,0 +1,97 @@
+body {
+    /* background-image: url(fon.jpg); */
+    background-color: rgb(49, 34, 13);
+
+    font-family: 'Comfortaa', cursive;
+
+}
+
+img {
+    width: 100%;
+}
+
+.col-logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+}
+
+p {
+    color: aliceblue;
+}
+.p-name{
+    font-size: 2em ;
+    text-decoration: underline;
+    text-decoration-color: #e6a15c;
+}
+.my-card {
+    background-color: #251f0b;
+    color: aliceblue;
+    padding: 15px;
+
+    font-family: 'Comfortaa', cursive;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.card-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    border-bottom: 1px solid #221a02;
+
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.card-price {
+    font-family: 'Courier New', Courier, monospace;
+    color: blanchedalmond;
+
+    font-family: 'Comfortaa', cursive;
+}
+
+h2 {
+    color: azure;
+    text-align: center;
+
+    font-family: 'Comfortaa', cursive;
+}
+
+.fon {
+    background-color: rgb(48, 35, 18);
+}
+
+.mmmmm {
+    color: azure;
+    background-color: #291f09;
+}
+.mmmmm li{
+    line-height: 1.5;
+}
+.footer {
+    background-color: #2a2a2a;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+}
+
+.socio-link {
+    font-size: 2em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-right: 20px;
+}
+
+
+.socio-link:hover {
+     color: #e6a15c;
+    /* Зміна кольору при наведенні */
+    
+}
+.navbar{
+background-color: #291f09;
+color: antiquewhite;
+}
