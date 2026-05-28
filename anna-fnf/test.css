@@ -1,0 +1,95 @@
+/* Контейнер тесту */
+.quiz-container {
+   background: rgba(25, 18, 36, 0.8);
+   border: 3px solid #00f0ff;
+   border-radius: 15px;
+   padding: 30px;
+   max-width: 600px;
+   margin: 40px auto;
+   box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+   text-align: center;
+ }
+ 
+ .quiz-title {
+   margin-top: 0 !important;
+ }
+ 
+ .quiz-question {
+   font-size: 1.3rem;
+   font-weight: 600;
+   margin-bottom: 25px;
+   color: #fff;
+ }
+ 
+ /* Кнопки відповідей */
+ .btn-answer {
+   display: block;
+   width: 100%;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.1rem;
+   background: #110c18;
+   color: #e0dbec;
+   border: 2px solid #ff007c;
+   padding: 12px 20px;
+   margin-bottom: 15px;
+   border-radius: 8px;
+   cursor: pointer;
+   text-align: left;
+   transition: all 0.2s ease;
+ }
+ 
+ .btn-answer:hover {
+   background: #ff007c;
+   color: #110c18;
+   font-weight: 600;
+   transform: scale(1.02);
+   box-shadow: 0 0 15px #ff007c;
+ }
+ 
+ /* Блок результату */
+ .quiz-result {
+   animation: fadeIn 0.5s ease;
+ }
+ 
+ .character-name {
+   font-family: 'Permanent Marker', sans-serif;
+   font-size: 2.5rem;
+   color: #39ff14; /* Зелений колір Sick! */
+   text-shadow: 0 0 15px #39ff14;
+   margin: 15px 0;
+   text-transform: uppercase;
+ }
+ 
+ .character-desc {
+   font-size: 1.1rem;
+   margin-bottom: 25px;
+ }
+ 
+ .btn-restart {
+   font-family: 'Montserrat', sans-serif;
+   background: #00f0ff;
+   color: #110c18;
+   font-weight: 800;
+   border: none;
+   padding: 10px 25px;
+   border-radius: 5px;
+   cursor: pointer;
+   text-transform: uppercase;
+   transition: all 0.2s ease;
+ }
+ 
+ .btn-restart:hover {
+   box-shadow: 0 0 15px #00f0ff;
+   transform: scale(1.05);
+ }
+ 
+ /* Допоміжний клас для ховання елементів */
+ .hidden {
+   display: none;
+ }
+ 
+ @keyframes fadeIn {
+   from { opacity: 0; transform: translateY(10px); }
+   to { opacity: 1; transform: translateY(0); }
+ }
+ 

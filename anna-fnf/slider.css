@@ -1,0 +1,103 @@
+* {
+   box-sizing: border-box;
+}
+
+.long-slider {
+   position: relative;
+   height: 300px;
+   width: 100%;
+   margin-top: 30px;
+   margin-bottom: 30px;
+   /* overflow: hidden; */
+   /* transform: translateX(); */
+}
+
+.arrow-left,
+.arrow-right {
+   position: absolute;
+   height: 100%;
+   top: 0;
+   z-index: 5;
+   background-color: rgba(255, 255, 255, 0.356);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 50px;
+   transition: 0.3s;
+   font-size: 4em;
+   user-select: none;
+   cursor: pointer;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+   background-color: rgba(134, 131, 131, 0.806);
+
+}
+
+.arrow-left:active,
+.arrow-right:active {
+   background-color: rgba(107, 50, 47, 0.795);
+
+}
+
+.arrow-right {
+   right: 0;
+}
+
+.item-wrap {
+   /* position: absolute; */
+   display: flex;
+   height: 300px;
+   transition: 0.7s ease-out;
+   max-width: 100%;
+   overflow: auto;
+   scroll-behavior: smooth;
+}
+
+.slider-item {
+   /* width: 450px; */
+   margin-left: 10px;
+   /* border: 1px solid black; */
+   display: flex;
+   justify-content: center;
+}
+
+.item-wrap img {
+   height: 100%;
+   width: auto;
+}
+
+
+
+/* Works on Chrome, Edge, and Safari */
+/* нижный скрол */
+.item-wrap::-webkit-scrollbar {
+   height: 7px !important;
+   /* висота/ширина скрола */
+}
+
+.item-wrap::-webkit-scrollbar-track {
+   background: rgba(0, 0, 0, 0);
+   /*смужка */
+}
+
+.item-wrap::-webkit-scrollbar-thumb {
+   /*те, що їздить */
+   background-color: rgb(87, 17, 13);
+   border-radius: 20px;
+   /* border: 3px solid rgb(163, 163, 163);  */
+}
+
+.item-wrap::-webkit-scrollbar-thumb:hover {
+   /*те, що їздить */
+   background-color: rgb(0, 0, 0);
+
+}
+
+/* 
+/* Works on Firefox */
+/* .item-wrap {
+   scrollbar-width: thin;
+   scrollbar-color: rgb(235, 235, 235) rgba(215, 215, 215, 0.542);
+} */
