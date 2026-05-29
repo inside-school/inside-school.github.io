@@ -1,0 +1,186 @@
+img {
+    width: 100%;
+}
+
+.container {
+    background-color: rgba(14, 38, 27, 0.75);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+body {
+    /* background-color: green; */
+    background-image: url(pexels-diogo-miranda-2044514-22682099\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    color: white;
+      font-family: "Montserrat", sans-serif;
+
+}
+
+/* ------ */
+
+/* Стилі для шапки */
+.main-header {
+    height: 100vh;
+    /* Шапка на весь екран */
+    position: relative;
+    /* Якісне фото Португалії (замініть посилання на власне фото за потреби) */
+    background:url(fon.jpg) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+/* Навігаційна панель */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 8%;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #f39c12;
+    /* Золотавий акцент */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f39c12;
+}
+
+/* Контент по центру шапки */
+.header-content {
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(70, 70, 70, 0.671);
+}
+
+.header-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.header-content p {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+/* Кнопка дії */
+.btn-explore {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: #f39c12;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-explore:hover {
+    background-color: transparent;
+    border-color: #ffffff;
+    transform: translateY(-3px);
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links li {
+        margin: 0 15px;
+    }
+
+    .header-content h1 {
+        font-size: 36px;
+    }
+
+    .header-content p {
+        font-size: 16px;
+    }
+}
+
+/* ------------ */
+
+
+h2 {
+    font-family: 'Playfair Display', serif; /* Той самий шрифт, що й у шапці */
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #ffffff; /* Текст білий, щоб виділятися на зеленому тлі */
+    padding-left: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-left: 5px solid #f39c12; /* Золотава вертикальна лінія */
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+
+
+.interesting {
+    display: flex;
+    flex-direction: column;
+}
+.interesting h2{
+    align-self: center;
+}
+/* Стиль для заголовка <h3> */
+.interesting h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #f39c12; /* Золотаве сонце */
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+/* Стиль для тексту (цитати дідуся) */
+.interesting p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #eaeaea; /* М'який біло-кремовий колір, приємний для очей */
+    font-style: italic; /* Курсив, щоб виглядало як цитата чи розповідь */
+    border-left: 3px solid rgba(243, 156, 18, 0.4); /* Легка золота лінія зліва від тексту */
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
