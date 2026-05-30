@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Oi&family=Press+Start+2P&family=Rubik+Glitch&family=Underdog&display=swap');
+img{
+    width: 100%;
+}
+body{
+    background-color: hsl(0, 0%, 16%);
+    color: aliceblue;
+}
+.p-logo-1 {
+    font-family: "Rubik Glitch", system-ui;
+    font-size: 1.7em;
+    letter-spacing: 5px;
+    border-bottom: 1px solid rgb(220, 23, 23);
+    color: brown;
+    margin-bottom: 0;
+}
+
+.p-logo-2 {
+    margin-top: 0;
+    font-size: 1.4em;
+
+    font-family: "Underdog", system-ui;
+    color: darkred;
+}
+
+.my-navbar {
+    background-color: #525151;
+}
+p{
+    color: aliceblue;
+}
+.card{
+    color: aliceblue;
+}
