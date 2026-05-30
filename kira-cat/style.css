@@ -1,0 +1,444 @@
+img {
+    width: 100%;
+}
+
+.header {
+    background-color: rgb(253, 216, 250);
+    text-align: center;
+    font-family: "Great Vibes",
+        cursive;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header img{
+    width: 50px;
+}
+
+h1 {
+    font-size: 4em;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.fon-1 {
+    background-image: url(888.avif);
+}
+
+/* Контейнер для всього блоку */
+.top-reasons-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+}
+
+/* Заголовок секції */
+.reasons-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Налаштування списку карток */
+.reasons-list {
+    list-style: none;
+    /* Прибираємо стандартну нумерацію */
+    padding: 0;
+    margin: 0;
+}
+
+/* Стиль кожної картки-причини */
+.reasons-list li {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #f0f4f8;
+    box-shadow: 0 4px 12px rgba(142, 154, 175, 0.05);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+}
+
+/* Ефект красивого підйому картки при наведенні */
+.reasons-list li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(142, 154, 175, 0.12);
+    border-color: #e2eaf1;
+}
+
+/* Стиль великих дизайнерських цифр */
+.reason-number {
+    font-size: 32px;
+    font-weight: 800;
+    color: #ff8a8a;
+    /* Ніжний коралово-рожевий колір */
+    background: #fff5f5;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+    /* Щоб цифра не стискалася на мобільних */
+    transition: all 0.3s ease;
+}
+
+/* Зміна кольору цифри при наведенні на картку */
+.reasons-list li:hover .reason-number {
+    background: #ff8a8a;
+    color: #ffffff;
+}
+
+/* Контейнер для тексту */
+.reason-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Заголовок причини */
+.reason-text strong {
+    font-size: 18px;
+    color: #1a2530;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+/* Опис причини */
+.reason-text p {
+    font-size: 14.5px;
+    color: #5a6b7c;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Адаптивність для мобільних телефонів */
+@media (max-width: 480px) {
+    .reasons-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .reason-number {
+        margin-right: 0;
+        margin-bottom: 12px;
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+    }
+}
+
+
+.title-minimal {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+/* Створення декоративної лінії */
+.title-minimal::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #ff8a8a;
+    /* Рожевий акцент під колір цифр */
+    border-radius: 2px;
+}
+
+
+
+
+
+/* таблиця  */
+/* Обгортка для таблиці (додає горизонтальну прокрутку, якщо екран зовсім малий) */
+.table-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 15px;
+    font-family: 'Segoe UI', Roboto, Helvetica, sans-serif;
+}
+
+/* Основний стиль таблиці */
+.care-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #ffffff;
+    border: 1px solid #f0f4f8;
+    border-radius: 16px;
+    overflow: hidden;
+    /* Щоб кути таблиці залишалися круглими */
+    box-shadow: 0 4px 12px rgba(142, 154, 175, 0.05);
+}
+
+/* Стиль шапки таблиці */
+.care-table th {
+    background-color: #fff5f5;
+    /* Ніжний рожевий фон як у цифр */
+    color: #ff8a8a;
+    /* Акцентний коралово-рожевий колір */
+    font-weight: 700;
+    text-align: left;
+    padding: 16px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #ffe3e3;
+}
+
+/* Стиль звичайних комірок */
+.care-table td {
+    padding: 16px 20px;
+    color: #5a6b7c;
+    font-size: 14.5px;
+    line-height: 1.5;
+    border-bottom: 1px solid #f0f4f8;
+    transition: background-color 0.2s ease;
+}
+
+/* Прибираємо лінію під останнім рядком */
+.care-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Назва процедури виділяється темнішим шляхетним кольором */
+.care-table td strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+/* Плавне підсвічування рядка при наведенні мишки */
+.care-table tbody tr:hover td {
+    background-color: #fafbfc;
+}
+
+/* 📱 Адаптивність для мобільних телефонів (ефект карток) */
+@media (max-width: 600px) {
+
+    .care-table,
+    .care-table thead,
+    .care-table tbody,
+    .care-table th,
+    .care-table td,
+    .care-table tr {
+        display: block;
+    }
+
+    /* Ховаємо оригінальну шапку */
+    .care-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    /* Кожен рядок перетворюється на окрему картку */
+    .care-table tr {
+        border-bottom: 3px solid #fff5f5;
+        padding: 10px 0;
+    }
+
+    .care-table tr:last-child {
+        border-bottom: none;
+    }
+
+    /* Налаштування комірок всередині мобільної картки */
+    .care-table td {
+        border: none;
+        padding: 8px 20px;
+        position: relative;
+        padding-left: 45%;
+        /* Звільняємо місце зліва для назви колонки */
+        text-align: right;
+    }
+
+    /* Додаємо назви колонок зліва через авто-контент */
+    .care-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 20px;
+        width: 40%;
+        text-align: left;
+        font-weight: 700;
+        color: #2c3e50;
+    }
+
+    /* Перша комірка (Назва) вирівнюється на всю ширину як заголовок */
+    .care-table td:first-child {
+        text-align: left;
+        padding-left: 20px;
+        background-color: #fff5f5;
+        margin-bottom: 6px;
+    }
+
+    .care-table td:first-child::before {
+        display: none;
+    }
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f7f3e9;
+
+  /* Підключаємо одну й ту саму лапку кілька разів */
+  background-image: 
+    url('cat.png'), 
+    url('cat.png'), 
+    url('cat.png'), 
+
+    url('cat.png');
+
+  /* Задаємо точні координати для кожної лапки (X Y) */
+  background-position: 
+    0% 30%,  /* Перша лапка: ліворуч зверху */
+    0% 80%,  /* Друга лапка: праворуч по центру */
+    100% 20%,  /* Друга лапка: праворуч по центру */
+
+    100% 100%;  /* Третя лапка: знизу */
+
+  /* Скасовуємо автоматичне повторення */
+  background-repeat: no-repeat;
+
+  /* Розмір для кожної лапки */
+  background-size: 50px 50px, 70px 70px, 60px 60px;
+}
+/* Базове скидання для футера */
+.footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 40px 20px 20px 20px;
+  font-family: sans-serif;
+  margin-top: auto; /* Допомагає притиснути футер до низу, якщо контенту мало */
+}
+
+/* Контейнер сітки (флексбокс для адаптивності) */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* Налаштування колонок */
+.footer-col {
+  flex: 1;
+  min-width: 250px; /* Щоб колонки переносилися на мобільних */
+}
+
+.footer-logo {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ffeb3b; /* Жовтий акцент на логотипі */
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* Стилізація тексту та посилань */
+.footer-text {
+  color: #cccccc;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* Ефект наведення на посилання */
+.footer-links a:hover {
+  color: #ffeb3b;
+}
+
+/* Блок соціальних іконок */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  text-decoration: none;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #ffeb3b;
+}
+
+/* Нижня панель */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333333;
+  font-size: 13px;
+  color: #888888;
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------- */
+
+
+
+
+/*  */
+/* */
+/* 
+font-family: "Marck Script", cursive;
+font-family: "Monomakh",system-ui; 
+font-family: "Orelega One", serif;
+font-family: "Great Vibes", cursive;
+font-family: "Caveat", cursive;
+font-family: "Prata", serif;
+
+*/
