@@ -1,0 +1,329 @@
+img {
+    width: 100%;
+}
+
+.text {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.socio {
+    font-size: 2em;
+    text-decoration: none;
+    color: aliceblue;
+}
+/* Основні налаштування підвалу */
+.arcane-footer {
+    background-color: #0b0e14; /* Глибокий темний колір */
+    color: #a3a3a3;
+    padding: 60px 20px 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 3px solid #ff4655; /* Лінія поділу */
+    box-shadow: 0 -10px 30px rgba(157, 44, 240, 0.1); /* Легке фіолетове свічення */
+}
+
+/* Сітка для адаптивності */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+/* Логотип у стилі Хекстек/Хемтек */
+.footer-logo {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.6); /* Блакитне свічення */
+}
+
+.footer-logo span {
+    color: #00f2fe; /* Колір магії Хекстек */
+}
+
+.footer-brand p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Заголовки колонок */
+.footer-links h3, .footer-social h3 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Списки посилань */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links ul li a {
+    color: #a3a3a3;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Ефекти наведення для фракцій */
+.footer-links ul li a:hover {
+    color: #00f2fe;
+    padding-left: 5px;
+}
+
+.footer-links ul li a.link-piltover:hover {
+    color: #f7a01b; /* Золотий Пілтовер */
+    text-shadow: 0 0 8px #f7a01b;
+}
+
+.footer-links ul li a.link-zaun:hover {
+    color: #00ff66; /* Токсичний Заун */
+    text-shadow: 0 0 8px #00ff66;
+}
+
+/* Соціальні іконки (текстові або під шрифти) */
+.social-icons a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 8px 12px;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #9d2cf0; /* Фіолетовий колір Мерехтіння (Shimmer) */
+    box-shadow: 0 0 15px #9d2cf0;
+    color: #fff;
+}
+
+/* Нижня смуга */
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid #21262d;
+    font-size: 12px;
+    color: #6e7681;
+}
+
+/* Адаптація під мобільні екрани */
+@media (max-width: 600px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .footer-links ul li a:hover {
+        padding-left: 0;
+    }
+}
+
+
+.text-logo {
+    text-align: center;
+}
+
+.text-logo h1 {
+    margin-bottom: 0;
+
+    /* font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow:
+        0 0 10px rgba(0, 229, 255, 0.8),
+        0 0 20px rgba(0, 229, 255, 0.5),
+        0 0 30px rgba(0, 110, 255, 0.3);
+    letter-spacing: 4px; */
+
+
+
+
+    font-family: 'Cinzel', 'Times New Roman', serif;
+    font-size: 3rem;
+    font-weight: 300;
+    color: #d4af37;
+    /* Золотий колір */
+    text-align: center;
+    letter-spacing: 8px;
+    border-bottom: 2px solid #d4af37;
+    padding-bottom: 15px;
+    display: inline-block;
+}
+
+
+
+
+
+
+.text-logo p {
+    margin-top: 0;
+    font-family: 'Cinzel', 'Georgia', serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #8c8b8b;
+    text-align: center;
+    letter-spacing: 1.5px;
+    max-width: 700px;
+    margin: 20px auto;
+    opacity: 0.9;
+}
+
+.text-logo p::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d4af37;
+
+
+    line-height: 1;
+}
+
+h2 {
+    font-family: 'Cinzel', 'Georgia', serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #868585;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 10px;
+    position: relative;
+    /* Тонка золота рамка, що зникає по боках */
+    border-left: 2px solid #d4af37;
+    border-right: 2px solid #d4af37;
+    /* Легке внутрішнє свічення, як від Гекстеку */
+    background: linear-gradient(90deg, rgba(212, 175, 55, 0.05) 0%, rgba(212, 175, 55, 0) 100%);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+/* Ефект при наведенні курсору (Hover) */
+h2:hover {
+    color: #b28800;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.6);
+    transform: translateY(-2px);
+    /* Легке підняття вгору */
+    border-left-color: #fff;
+    border-right-color: #fff;
+}
+
+.top-story {
+    font-family: 'Cinzel', 'Georgia', serif;
+    font-size: 1.25rem;
+    /* Трохи більший шрифт для вступу */
+    line-height: 1.9;
+    color: #f0f0f0;
+    text-align: center;
+    /* Центрування на головному екрані */
+    max-width: 800px;
+    margin: 20px auto;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    /* Щоб текст краще читався на тлі */
+}
+
+.top-text {
+    background: radial-gradient(circle, #1a1c23 0%, #0d0e12 100%);
+    background-color: #0d0e12;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 40px 20px;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* --------------------------------- */
+/* Гарний преміальний контейнер (див) для таблиці */
+.table-wrapper {
+    background: linear-gradient(145deg, #16181f, #0f1015);
+    border: 1px solid rgba(214, 175, 55, 0.25);
+    /* Золота тонка рамка */
+    border-radius: 12px;
+    /* Скруглені кути */
+    padding: 24px;
+    max-width: 850px;
+    width: 100%;
+    margin: 50px auto;
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.6),
+        0 0 30px rgba(0, 191, 255, 0.03);
+    /* Дуже легке, магічне синє сяйво */
+    overflow-x: auto;
+    /* Захист: якщо екран малий, з'явиться акуратна прокрутка */
+}
+
+/* Оновлена таблиця всередині дива */
+.heroes-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    /* Робить відстань між рядками */
+    font-family: 'Cinzel', serif;
+}
+
+.heroes-table th {
+    color: #d4af37;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 16px 20px;
+    text-align: left;
+    border-bottom: 2px solid rgba(214, 175, 55, 0.4);
+    font-size: 0.95rem;
+}
+
+/* Окремі рядки як картки */
+.heroes-table tbody tr {
+    background: rgba(255, 255, 255, 0.02);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.heroes-table td {
+    padding: 18px 20px;
+    color: #cccccc;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Заокруглення для країв кожного рядка */
+.heroes-table td:first-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.03);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.heroes-table td:last-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.03);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+/* Ефект інтерактивності при наведенні */
+.heroes-table tbody tr:hover {
+    background: rgba(214, 175, 55, 0.06);
+    /* Золотаве підсвічування рядка */
+    transform: scale(1.015);
+    /* Легке збільшення рядка */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
