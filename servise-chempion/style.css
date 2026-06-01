@@ -1,0 +1,266 @@
+img {
+    width: 100%;
+}
+
+p {
+    font-family: "Merriweather", serif;
+}
+
+h1 {
+    font-family: "Merriweather", serif;
+}
+
+/* Відступи для всієї секції послуг */
+.services-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    /* Світло-сірий бекграунд для контрасту зі світлими картками */
+}
+
+/* Стиль лінії під головним заголовком */
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #0d6efd;
+    /* Стандартний синій колір Bootstrap */
+    border-radius: 2px;
+}
+
+/* Ефекти для карток */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 12px !important;
+    /* Робимо кути карток м'якшими */
+}
+
+/* Ефект наведення (hover) на картку */
+.service-card:hover {
+    transform: translateY(-5px);
+    /* Картка плавно піднімається */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+    /* Тінь стає глибшою */
+}
+
+/* Блок для круглої/квадратної іконки */
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+
+/* Стиль для кнопки дзвінка */
+.btn-tel {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    /* Відступ між текстом та майбутньою іконкою */
+    background-color: #58528e;
+    /* Надійний зелений колір Bootstrap (асоціюється з викликом) */
+    color: #ffffff;
+    /* Білий текст */
+    font-weight: 600;
+    /* Напівжирний шрифт */
+    padding: 12px 28px;
+    /* Внутрішні відступи кнопки */
+    border-radius: 50px;
+    /* Круглі краї (виглядає дуже сучасно) */
+    text-decoration: none;
+    /* Прибираємо підкреслення тексту */
+    box-shadow: 0 4px 15px rgba(25, 60, 135, 0.3);
+    /* Легка зелена тінь */
+    transition: all 0.3s ease;
+    /* Плавна анімація */
+}
+
+/* Ефект при наведенні або натисканні */
+.btn-tel:hover {
+    background-color: #153c73;
+    /* Трохи темніший зелений при наведенні */
+    color: #ffffff;
+    transform: translateY(-2px);
+    /* Кнопка злегка піднімається */
+    box-shadow: 0 6px 20px rgba(25, 82, 135, 0.4);
+    /* Тінь стає помітнішою */
+}
+
+/* Ефект при натисканні (кліку) */
+.btn-tel:active {
+    transform: translateY(0);
+    /* Кнопка повертається на місце */
+}
+
+
+.p-adress {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    /* Відступ між іконкою та текстом */
+    color: #495057;
+    /* Приємний темно-сірий колір тексту */
+    font-size: 1rem;
+    /* Стандартний розмір шрифту */
+    font-weight: 500;
+    /* Трохи щільніший текст */
+    margin-bottom: 0;
+    /* Прибираємо стандартний нижній відступ параграфа */
+}
+
+/* Стиль для іконки всередині адреси */
+.p-adress svg {
+    color: #0d6efd;
+    /* Синій колір Bootstrap для маркера карти */
+    flex-shrink: 0;
+}
+
+
+
+/* Загальні стилі для секції переваг */
+.advantages-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+    /* Чистий білий фон для чергування з сірими блоками */
+}
+
+/* Синя лінія під заголовком */
+.section-title-adv::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #0d6efd;
+    /* Дефолтний синій Bootstrap */
+    border-radius: 2px;
+}
+
+/* Картки переваг */
+.advantage-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    /* Тонка ледь помітна рамка */
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* Ефект наведення на картку переваги */
+.advantage-card:hover {
+    border-color: #198754;
+    /* Рамка стає зеленою при наведенні */
+    box-shadow: 0 10px 25px rgba(25, 135, 84, 0.08);
+    /* М'яка тінь */
+}
+
+/* Круглий контейнер для іконки */
+.adv-icon-box {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Контейнер для секції цін */
+.price-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    /* Світло-сірий фон для чергування блоків */
+}
+
+/* Синя лінія під заголовком */
+.section-title-price::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #0d6efd;
+    border-radius: 2px;
+}
+
+/* Кастомізація самої таблиці */
+.custom-price-table {
+    border-collapse: separate;
+}
+
+/* Заокруглення кутів для верхньої плашки таблиці */
+.custom-price-table thead th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.custom-price-table thead th:last-child {
+    border-top-right-radius: 8px;
+}
+
+/* Ефект підсвічування рядка при наведенні мишкою */
+.custom-price-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.custom-price-table tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.03) !important;
+    /* Легке синє підсвічування */
+}
+
+
+/* Основні стилі підвалу */
+.main-footer {
+  background-color: #1a1d20 !important;
+}
+
+/* Колір описового тексту */
+.main-footer .text-muted {
+  color: #adb5bd !important;
+}
+
+/* Кнопка телефону в футері */
+.btn-tel-footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #198754;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.btn-tel-footer:hover {
+  background-color: #157347;
+  color: #ffffff;
+}
+
+/* Збільшений контейнер для карти */
+.footer-map-container {
+  width: 100%;
+  height: 220px; /* Карта стала вищою та помітнішою */
+}
+
+/* Автопідлаштування iframe від Google */
+.footer-map-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: 0 !important;
+}
+
+/* Ефект посилання знизу */
+.hover-white:hover {
+  color: #ffffff !important;
+}
