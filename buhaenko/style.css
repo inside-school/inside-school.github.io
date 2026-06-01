@@ -1,0 +1,101 @@
+ @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Lobster&family=Pacifico&family=Playwrite+GB+J+Guides:ital@0;1&display=swap');
+
+ img {
+     width: 100%;
+ }
+
+ .header {
+     background-color: #585c5b;
+ }
+
+ .name-span {
+     display: block;
+     font-family: "Playwrite GB J Guides", cursive;
+     ;
+     font-size: 2.5em;
+     color: aliceblue;
+
+ }
+
+ .name-span:nth-child(2) {
+     text-align: center;
+ }
+
+ .name-span:nth-child(3) {
+     text-align: right;
+ }
+
+ .first-row {
+     flex-wrap: wrap-reverse;
+ }
+
+ .vazluviy-text {
+     font-size: 1.3em;
+ }
+
+ /* карточки */
+ .coffee-item {
+     background-color: #703b263b;
+     position: relative;
+     overflow: hidden;
+
+ }
+
+ .p-title {
+     text-align: center;
+     color: #C99E71;
+     border-bottom: 1px solid #a8a29c;
+     font-weight: 900;
+     font-size: 1.2em;
+ }
+
+ .coffee-item .btn-details {
+     position: absolute;
+     top: 10%;
+     width: 100%;
+     left: 0;
+     margin: auto;
+     background-color: #b787df;
+     color: #ffffff;
+     border: none;
+     border-radius: 50% ;
+     padding: 10px 20px;
+     font-variant: small-caps;
+     font-weight: 700;
+     font-family: "Lobster", sans-serif;
+     letter-spacing: 1px;
+     font-size: 20px;
+     transition: 0.5s;
+ }
+
+ 
+
+ .btn-details:hover {
+     background-color: #746555;
+
+ }
+
+ .about-coffee {
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     background-color: #323131b7;
+     color: #f1efe9;
+     padding: 10px;
+     transition: 0.5s;
+     overflow-y: auto;
+ }
+
+ /* ---------------- */
+h5, h4, h3{
+     font-family: "EB Garamond", serif;
+
+}
+h1{
+
+
+}
+p{
+ 
+
+}
