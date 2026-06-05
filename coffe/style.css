@@ -1,0 +1,208 @@
+img {
+    width: 100%;
+}
+body{
+    background-color: #14110E;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+.navbar {
+    background-color: #1C1814;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-link {
+    color: #C99E71;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    height: 90vh;
+    background-image: url(top-img.jpg);
+    background-size: cover;
+    background-position: 50% 90%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.btn-taste {
+    background-color: #C99E71;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    font-weight: 700;
+    /* font-family: "Jost", sans-serif; */
+    font-family: "Handjet", serif;
+    font-family: "Comfortaa", sans-serif;
+    font-family: "Play", sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+.btn-taste:hover{
+    border-radius: 10px;
+    text-decoration: underline;
+    color: #1C1814;
+}
+
+.header p {
+        font-family: "Raleway", sans-serif;
+}
+h1 {
+    font-family: "Comfortaa", sans-serif;
+}
+.card-cofee{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.card-cofee .card-text{
+    position: absolute;
+    background-color: #000000b8;
+    top: 20%;
+    left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+   transform: translateX(-100%);
+   transition: 0.5s;
+}
+.card-cofee:hover .card-text{
+    display: block;
+    transform: translateX(0);
+
+}
+.card-cofee p{
+    margin-bottom: 3px;
+    font-family: "Comfortaa", sans-serif;
+
+}
+.number{
+    color: #C99E71;
+    margin-right: 10px;
+    font-weight: 900;
+}
+.history-text{
+    background-color: #1C1814;
+    height: 100%;
+    padding:70px 30px;
+
+}
+.history-text h2{
+    font-family: "Comfortaa", sans-serif;
+}
+.orange-text{
+    color: #C99E71;
+}
+.history-text p{
+    font-family: "Raleway", sans-serif;
+
+}
+.coffee-item{
+    background-color: #5a4020;
+    position: relative;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.p-title{
+    text-align: center;
+    color: #C99E71;
+    border-bottom: 1px solid #C99E71;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+.coffee-item .btn-details{
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    left: 0;
+    margin: auto;
+    background-color: #C99E71;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    font-variant: small-caps;
+    font-weight: 700;
+    font-family: "Play", sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    transition: 0.5s;
+
+}
+.btn-details:hover{
+    background-color: #746555;
+
+}
+.about-coffee{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #323131b7;
+    padding: 10px;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.anim-coffee{
+    background-color: #ddd;
+    /* background-color: #f3c9a9; */
+    padding: 50px 0;
+}
+.anim-coffee-2{
+    padding: 50px 0;
+    margin: 50px 0;
+    background-color: #002c31;
+    /* background-color:  #022f35; */
+}
+.read-more-div{
+    display: none;
+}
+.read-more-h3, .read-min-h3{
+    text-transform: uppercase;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: underline;
+    font-style: 1rem;
+    color: #C99E71;
+}
+.coffee-history h2, .coffee-history h3{
+    font-family: "Comfortaa", sans-serif;
+text-align: center;
+}
+.footer {
+    background-color: #282828;
+    padding: 50px;
+}
+
+body {
+    margin: 0;
+}
+
+.socio a {
+    color: chocolate;
+    margin: 10px;
+    font-size: 2em;
+}
+
+.socio a:hover {
+    color: cornsilk;
+}
+.footer p {
+    margin: 0;
+    color: cornsilk;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tsutaty {
+    margin: 20px 0;
+}
